@@ -1,4 +1,5 @@
 from app.backend.Model.connectors.postgresql import PostGreSqlConnector
+from app.backend.Model.connectors.s3aws import  S3AwsConnector
 
 class Connector:
     def __init__(self, type, name, description, property):

@@ -11,7 +11,7 @@ class RequestGetDB:
 
     def get_name_format(self):
         date = ""
-        if self.name_format['date']:
+        if self.name_format['date'] == "true":
             now = datetime.now()
             date = now.strftime("_%d%m%Y")
 

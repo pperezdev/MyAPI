@@ -54,7 +54,10 @@ class Builder:
 
     def execute_connector(self, connector_name, data):
         return self.find_and_execute("CONNECTOR", self.connectors, connector_name, "execute", data)
-        
+    
+    def get_connector_schema(self, connector_name, data):
+        return self.find_and_execute("CONNECTOR", self.connectors, connector_name, "get_schema", data)
+
     def get_schema(self):
         l = []
         for request in self.requests:

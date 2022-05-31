@@ -1,5 +1,6 @@
 from app.backend.Model.requestgetfile import RequestGetFile
 from app.backend.Model.requestgetdb import RequestGetDB
+from app.backend.Model.requestgetfileaws import RequestGetFileAws
 
 class Request:
     def __init__(self, name, description, properties):
